@@ -1,0 +1,181 @@
+<!-- application.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">Company Name</h1>
+
+        <hr>
+        <div style="display: flex;justify-content: center;gap: 20px;">
+            <a style="text-align: center;" href="home.html">Media Elements</a>
+            <a style="text-align: center;" href="application.html">Application
+                Form</a>
+        </div>
+        <hr>
+
+        <form action="/action_page.php">
+            <fieldset style="display: flex; justify-content: center;">
+                <legend align="center" style="justify-content: center;">
+                    Application Form:</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name"
+                                placeholder="Enter Your Name" autofocus
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="app_no">Application Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="app_no" name="app_no"
+                                placeholder="KU2021CS1010"
+                                pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}[0-9]{4}"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="pass">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="pass" name="pass"
+                                placeholder="*********" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dob">Date Of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="dob" name="dob" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age">Age:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="mob">Mobile Number:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="mob" name="mob" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email ID:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email"
+                                required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="gender">Select Gender:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="male" value="male"
+                                name="gender" required checked>
+                            <label for="male">Male:</label>
+
+                            <input type="radio" id="fmale" name="gender"
+                                value="female" required>
+                            <label for="male">Female:</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <textarea name="address" id="address" cols="20"
+                                rows="5"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="langs">Languages Known:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" value="english"
+                                name="gender[]">
+                            <label for="english">English</label>
+                            <input type="checkbox" value="hindi"
+                                name="gender[]">
+                            <label for="hindi">Hindi</label>
+                            <input type="checkbox" value="marathi"
+                                name="gender[]">
+                            <label for="marathi">Marathi</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="course">Select Your Course:</label>
+                        </td>
+                        <td>
+                            <select name="course" id="course" required>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="Mech">Mech</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="photo">Upload Your Photo:</label>
+                        </td>
+                        <td>
+                            <input type="file" id="photo">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> </td>
+                        <td>
+                            <progress value="50" max="100"></progress><span
+                                style="color: blue;">50% Upload Completed</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;"> <input
+                                type="submit" name="submit" id="Submit">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
